@@ -1,0 +1,10 @@
+.logo {
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.logo::part(image) {
+    border-radius: 50%;
+}

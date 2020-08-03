@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Create an Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-img class="logo"
+      src="https://api.adorable.io/avatars/121"
+    ></ion-img> 
+    <ion-card-header>
+      <ion-card-title>
+        TodoIonic
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text" [(ngModel)]="user.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Confirm Password</ion-label>
+        <ion-input type="password" [(ngModel)]="user.confirmPassword"></ion-input>
+      </ion-item>  
+    </ion-card-content>
+
+    <ion-card-footer>
+      <ion-button color="danger" expand="block" (click)="signup()"> Sign Up </ion-button>
+      <ion-button color="danger" fill="clear" expand="block" routerLink="/login" routerDirection="back"> Already have an account? </ion-button>
+    </ion-card-footer>
+  </ion-card>
+
+</ion-content>

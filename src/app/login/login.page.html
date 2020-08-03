@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Login to TodoIonic</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img class="logo" src="https://api.adorable.io/avatars/121"></ion-img>
+
+    <ion-card-header>
+      <ion-card-title>
+        TodoIonic
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-footer>
+      <ion-button color="danger" expand="block" (click)="login()"> Login </ion-button>
+      <ion-button
+        color="danger"
+        fill="clear"
+        expand="block"
+        routerLink="/signup"
+        routerDirection="forward"
+      >
+        Don't have an account?
+      </ion-button>
+    </ion-card-footer>
+  </ion-card>
+</ion-content>

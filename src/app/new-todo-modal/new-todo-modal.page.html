@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>New Todo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Title</ion-label>
+      <ion-input type="text" [(ngModel)]="todo.title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Description</ion-label>
+      <ion-input type="text" [(ngModel)]="todo.description"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Date</ion-label>
+      <ion-datetime displayFormat="MM DD YYYY" [(ngModel)]="todo.date"></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="light">
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="light" (click)="close()" routerLink="/todos" routerDirection="back">Cancel</ion-button>
+      </ion-col> 
+      <ion-col>
+        <ion-button expand="block" color="danger" (click)="create()">Create</ion-button>
+      </ion-col> 
+    </ion-row>  
+  </ion-toolbar> 
+</ion-footer>

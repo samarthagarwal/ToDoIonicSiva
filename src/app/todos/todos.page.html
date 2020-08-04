@@ -11,7 +11,7 @@
         <ion-icon name="add"></ion-icon>
       </ion-button>
 
-      <ion-button fill="clear">
+      <ion-button fill="clear" (click)="logout()">
         <ion-icon name="log-out"></ion-icon>
       </ion-button>
 
@@ -21,5 +21,36 @@
 </ion-header>
 
 <ion-content>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let todo of todos">
+
+      <ion-item>
+        <ion-label>
+          <h2>{{ todo.data().todo_title }}</h2>
+          <h3>{{ todo.data().todo_description }}</h3>
+          <p>{{ todo.data().todo_date.toDate() | date:'MMMM dd yyyy' }}</p>
+        </ion-label>
+
+        <ion-button slot="end" *ngIf="todo.data().todo_completed" color="danger" fill="clear">
+          <ion-icon slot="icon-only" name="checkbox"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+      <ion-item-options side="start">
+        <ion-item-option color="success" (click)="markAsDone(todo)">
+          <ion-icon color="dark" [name]="todo.data().todo_completed ? 'checkbox': 'square'" slot="icon-only"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="delete(todo)">
+          <ion-icon name="trash" slot="icon-only"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+    
+  </ion-list>
 
 </ion-content>

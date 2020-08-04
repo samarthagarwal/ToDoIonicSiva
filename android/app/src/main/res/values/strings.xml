@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">IonicTodo</string>
+    <string name="title_activity_main">IonicTodo</string>
+    <string name="package_name">com.knowledgehut.todoionic</string>
+    <string name="custom_url_scheme">com.knowledgehut.todoionic</string>
+</resources>

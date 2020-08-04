@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "626681402232",
+    "firebase_url": "https://ionictodo-fdc2d.firebaseio.com",
+    "project_id": "ionictodo-fdc2d",
+    "storage_bucket": "ionictodo-fdc2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626681402232:android:8386baab3442ae51846e8d",
+        "android_client_info": {
+          "package_name": "com.knowledgehut.todoionic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626681402232-aa40reu9en2o2jpanr8jq6mvs9ppldht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbeAgx61_IAUc6XVQ-dxAT1KURQZM3K74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626681402232-aa40reu9en2o2jpanr8jq6mvs9ppldht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

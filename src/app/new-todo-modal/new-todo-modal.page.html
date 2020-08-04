@@ -12,11 +12,11 @@
   <ion-list>
     <ion-item>
       <ion-label position="floating">Title</ion-label>
-      <ion-input type="text" [(ngModel)]="todo.title"></ion-input>
+      <ion-input type="text" [value]="todo.title" (input)="updateField($event, 'title')"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Description</ion-label>
-      <ion-input type="text" [(ngModel)]="todo.description"></ion-input>
+      <ion-input type="text"  [value]="todo.description" (input)="updateField($event, 'description')"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Date</ion-label>
